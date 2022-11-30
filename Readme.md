@@ -2,6 +2,10 @@
 
 ## Folders & files structure
 
+- ### middlewares
+
+  - [verifyToken.js](./middlewares/verifyToken.js)
+
 - ### models
 
   - [Cart.js](./models/Cart.js)
