@@ -39,3 +39,4 @@
 - dotenv
 - crypto-js
 - jsonwebtoken
+- stripe
