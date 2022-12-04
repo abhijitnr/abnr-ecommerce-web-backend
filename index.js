@@ -22,6 +22,11 @@ mongoose
 
 app.use(express.json());
 
+/* WELCOME */
+app.get("/", (req, res) => {
+  res.send("WELCOME TO ABNR ECOMMERCE BACKEND");
+});
+
 /* ROUTES */
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
