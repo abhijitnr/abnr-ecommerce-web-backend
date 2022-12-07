@@ -7,6 +7,7 @@ const productRoute = require("./routes/product.js");
 const cartRoute = require("./routes/cart.js");
 const orderRoute = require("./routes/order.js");
 const stripeRoute = require("./routes/stripe.js");
+const cors = require("cors");
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ mongoose
   });
 
 app.use(express.json());
+app.use(cors());
 
 /* WELCOME */
 app.get("/", (req, res) => {
